@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 /*CSS RESET*/
 html,
 body,
@@ -229,9 +229,9 @@ div.hr {
   margin-top: 1%;
 }
 
-div.hr hr {
+/* div.hr hr {
   display: none;
-}
+} */
 
 .page-bottom {
   margin-left: 5%;
