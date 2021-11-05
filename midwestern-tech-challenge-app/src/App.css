@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 /*CSS RESET*/
 html,
 body,
@@ -88,7 +88,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -124,7 +124,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*END CSS RESET*/
 
 html {
   background-color: #222222;
