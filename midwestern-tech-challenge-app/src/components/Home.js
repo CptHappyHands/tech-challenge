@@ -2,10 +2,20 @@ import React from "react";
 import rabbit from "../assets/Rabbit.png";
 import shield from "../assets/Shield.png";
 import talkie from "../assets/Talkie.png";
+import logo from "../assets/logo.png";
 import "../../src/";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
+      <header>
+        <nav>
+          <Link to="/">
+            <img src={logo} class="Logo" />
+          </Link>
+          <Link to="/contact">contact</Link>
+        </nav>
+      </header>
       <div class="heading-container">
         <div class="heading1">
           <img src={talkie} id="talkie" alt="picture of a microphone" />
