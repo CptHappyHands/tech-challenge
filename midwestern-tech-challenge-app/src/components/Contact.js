@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
-import { Routes, Route, Link } from "react-router-dom";
-import Home from "./Home";
+import { Link } from "react-router-dom";
+// import Home from "./Home";
 import Form from "./Form";
 import "../Form.css";
 
@@ -40,11 +40,23 @@ const Contact = () => {
   return (
     <div>
       <header>
-        <nav></nav>
+        <nav>
+          <div class="black-half">
+            <div class="nav-logo">
+              <img src={logo} class="Logo" alt="Midwestern's Logo" />
+            </div>
+          </div>
+          <div class="white-half">
+            <div class="nav-contact">
+              <Link to="/" class="home-link">
+                home
+              </Link>
+            </div>
+          </div>
+        </nav>
       </header>
       <div class="contact-body">
         <div class="contact-heading-one">
-          <img src={logo} class="Logo" />
           <div class="contact-heading-one-title">Heading One</div>
           <div class="contact-hr">
             <hr />
@@ -58,9 +70,6 @@ const Contact = () => {
           </div>
         </div>
         <div class="contact-heading-two">
-          <Link to="/" class="home-link">
-            home
-          </Link>
           <div class="contact-heading-two-title">Heading Two</div>
           <div class="contact-form">
             <Form

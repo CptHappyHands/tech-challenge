@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import logo from "./assets/logo.png";
-import { Routes, Route, Link } from "react-router-dom";
+import React from "react";
+// import logo from "./assets/logo.png";
+import { Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import "./App.css";

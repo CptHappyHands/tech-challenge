@@ -146,6 +146,7 @@ nav {
 
 .contact {
   color: #debf79;
+  margin-top: 3%;
 }
 
 button {
@@ -265,10 +266,9 @@ div.hr {
     justify-content: space-evenly;
   }
 
-  nav img {
-    width: 300px;
+  .Logo {
+    width: 70%;
   }
-
   .contact {
     padding-top: 5%;
   }

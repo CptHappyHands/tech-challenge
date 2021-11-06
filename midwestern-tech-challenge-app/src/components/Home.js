@@ -11,14 +11,16 @@ const Home = () => {
       <header>
         <nav>
           <Link to="/">
-            <img src={logo} class="Logo" />
+            <img src={logo} class="Logo" alt="Midwesterns Logo" />
           </Link>
-          <Link to="/contact">contact</Link>
+          <Link to="/contact" class="contact">
+            contact
+          </Link>
         </nav>
       </header>
       <div class="heading-container">
         <div class="heading1">
-          <img src={talkie} id="talkie" alt="picture of a microphone" />
+          <img src={talkie} id="talkie" alt="microphone" />
           <div class="heading-title">Heading Two</div>
           <div class="heading-info">
             <p>
@@ -33,7 +35,7 @@ const Home = () => {
           </div>
         </div>
         <div class="heading2">
-          <img src={rabbit} id="rabbit" alt="picture of a rabbit" />
+          <img src={rabbit} id="rabbit" alt="rabbit" />
           <div class="heading-title">Heading Two</div>
           <div class="heading-info">
             <p>
@@ -48,7 +50,7 @@ const Home = () => {
           </div>
         </div>
         <div class="heading3">
-          <img src={shield} id="shield" alt="picture of a shield" />
+          <img src={shield} id="shield" alt="shield" />
           <div class="heading-title">Heading Two</div>
           <div class="heading-info">
             <p>

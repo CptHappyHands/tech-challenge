@@ -126,6 +126,31 @@ table {
 }
 
 /*End CSS RESET*/
+
+header {
+  width: 100%;
+  /* background-color: white; */
+}
+
+.black-half {
+  background-color: #222222;
+  width: 50%;
+}
+
+.white-half {
+  background-color: white;
+  width: 50%;
+}
+
+.nav-logo {
+  background-color: #222222;
+}
+
+.nav-contact {
+  background-color: white;
+  width: 50%;
+}
+
 .contact-body {
   display: flex;
   flex-wrap: nowrap;
@@ -139,7 +164,6 @@ table {
 
 .Logo {
   margin-top: 5%;
-  margin-left: 13%;
 }
 
 .contact-heading-one-title {
@@ -175,9 +199,9 @@ div.contact-hr {
 }
 
 .home-link {
-  margin-left: 90%;
-  margin-top: 50%;
+  margin-left: 180%;
   color: #debf79;
+  font-size: 2vh;
 }
 
 .contact-heading-two-title {
@@ -239,4 +263,68 @@ div.contact-hr {
 .submit-btn {
   margin-top: 7%;
   margin-left: 39%;
+}
+
+/*MOBILE*/
+@media (max-width: 500px) {
+  /* html {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;
+  } */
+
+  nav {
+    background-color: #222222;
+  }
+
+  .white-half {
+    background-color: #222222;
+  }
+
+  div.nav-contact {
+    background-color: #222222;
+  }
+
+  .home-link {
+    margin-right: 50%;
+  }
+
+  .nav-logo {
+    width: 125%;
+  }
+
+  .contact-body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Poppins";
+  }
+
+  .contact-heading-one {
+    color: white;
+    width: 100%;
+    margin-bottom: 25%;
+  }
+
+  .contact-heading-two {
+    background-color: white;
+    width: 100%;
+  }
+
+  .contact-heading-two-title {
+    font-size: 4vh;
+    font-weight: 700;
+    /* margin-top: 30%; */
+    margin-left: 13%;
+  }
+
+  .contact-heading-two {
+    height: 80vh;
+  }
+
+  #message-input {
+    background-color: rgb(214, 208, 208);
+    height: 25vh;
+    width: 208%;
+    border: white;
+  }
 }
