@@ -4,13 +4,15 @@ import talkie from "../assets/Talkie.png";
 import logo from "../assets/logo.png";
 import "../../src/";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 // import removeDupes from "../actions";
 
 const Home = () => {
+  const [clicked, setClicked] = useState(false);
+
   const removeDupes = () => {
     let array1 = ["Matt Johnson", "Bart Paden", "Ryan Doss", "Jared Malcolm"];
     let array2 = ["Matt Johnson", "Bart Paden", "Jordan Heigle", "Tyler Viles"];
-    let count = 0;
     let comboArray = array1.concat(array2);
     let newArray = [];
     for (let i = 0; i < comboArray.length; i++) {
@@ -18,14 +20,16 @@ const Home = () => {
         newArray.push(comboArray[i]);
       }
     }
-
-    count++;
-    if (count <= 1) {
-      console.log(newArray);
-    } else {
-      console.log("You already did this");
-    }
+    setClicked(true);
+    console.log(newArray);
+    // if (setClicked !== true) {
+    //   alert(newArray);
+    //   setClicked(true);
+    // } else {
+    //   console.log("You've already clicked this!");
+    // }
   };
+
   return (
     <div>
       <header>
@@ -95,7 +99,16 @@ const Home = () => {
         <div class="bottom-text">
           Remove the duplicates in 2 Javascript objects and output the list of
           distinct names in an unordered list when
-          <a href="#" onClick={removeDupes}>
+          <a
+            href="#"
+            onClick={
+              clicked
+                ? alert(
+                    "Sorry, you can't click this again (see console for the answer)"
+                  )
+                : removeDupes
+            }
+          >
             this link
           </a>
           is clicked. If the operation has been completed already notify the

@@ -218,14 +218,34 @@ div.contact-hr {
 .form-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
   margin-left: 13%;
   margin-right: 13%;
   justify-content: space-between;
 }
 
+.form-first-name-input {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.form-last-name-input {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.form-title-input {
+  width: 40%;
+}
+
+.form-email-input {
+  width: 40%;
+  margin-right: 10%;
+}
+
 #first-name-input {
   margin-bottom: 15%;
-  width: 100%;
   margin-right: 20%;
   background-color: rgb(214, 208, 208);
   border: white;
@@ -256,7 +276,7 @@ div.contact-hr {
 #message-input {
   background-color: rgb(214, 208, 208);
   height: 10vh;
-  width: 260%;
+  width: 310%;
   border: white;
 }
 
@@ -290,7 +310,7 @@ div.contact-hr {
   }
 
   .nav-logo {
-    width: 125%;
+    width: 25%;
   }
 
   .contact-body {
