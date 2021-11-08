@@ -5,7 +5,6 @@ import logo from "../assets/logo.png";
 import "../../src/";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-// import removeDupes from "../actions";
 
 const Home = () => {
   const [clicked, setClicked] = useState(false);
