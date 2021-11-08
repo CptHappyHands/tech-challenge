@@ -10,9 +10,9 @@ const client = new Client({
 
 client.connect();
 
-client.query(`Select * from users`, (req, res, err) => {
+client.query(`Select * from names`, (req, res, err) => {
   if (!err) {
-    console.log(res.rows);
+    console.log(res);
   } else {
     console.log(err.message);
   }

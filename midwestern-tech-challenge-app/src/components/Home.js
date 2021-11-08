@@ -21,13 +21,7 @@ const Home = () => {
       }
     }
     setClicked(true);
-    console.log(newArray);
-    // if (setClicked !== true) {
-    //   alert(newArray);
-    //   setClicked(true);
-    // } else {
-    //   console.log("You've already clicked this!");
-    // }
+    alert(newArray);
   };
 
   return (
